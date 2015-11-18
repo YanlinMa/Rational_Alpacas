@@ -64,6 +64,8 @@ public class Rational {
 	den = den*R.den;
     }
 
+    //
+
     //main method -- Diagnostics
     public static void main(String[] args){
     }
