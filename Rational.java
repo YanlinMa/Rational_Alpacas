@@ -28,23 +28,31 @@ public class Rational {
     }
 
     //Methods
+    
+    //returns Rational as "a/b" (e.g. "1/2")
     public String toString(){
 	return num + "/" + den;
     }
+
+    //returns floating value of numerator (typecasted as double) divided by denominator
     public double floatValue(){
 	double num2 = num;
 	return num2/den;
     }
+
+    //multiplies numerators, multiplies denominators
     public void multiply(Rational R){
 	num = num*R.num;
 	den = den*R.den;
     }
+    
+    //divides numerators, divides denominators
     public void divide(Rational R){
 	num = num/R.num;
 	den = den/R.den;
     }
 
-    //main method
+    //main method -- Diagnostics
     public static void main(String[] args){
     }
 
