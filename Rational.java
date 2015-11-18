@@ -56,6 +56,7 @@ public class Rational {
 
 
 
+
     //returns gcd of numerator and denominator, Euclidean Algo
     public int gcd(Rational R) {
 	int ret = 1; int a = R.num; int b = R.den;
@@ -76,7 +77,18 @@ public class Rational {
 	}
 	return ret;
     }
-     
+    //adds two rational objects
+    public void add(Rational R){
+	num = num*R.den+den*R.num;
+	den = den*R.den;
+    }
+
+    //substracts two rational objects
+    public void subtract(Rational R){
+	num = num*R.den-den*R.num;
+	den = den*R.den;
+    }
+>>>>>>> 254a9bc0e8ee68129ae5d3bc1c3d20ad901b67fa
 
     //main method -- Diagnostics
     public static void main(String[] args){
