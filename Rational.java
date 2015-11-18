@@ -53,8 +53,8 @@ public class Rational {
     }
 
     //returns gcd of numerator and denominator, Euclidean Algo
-    public int gcd() {
-	int ret = 1; int a = R.num; int b = R.den;
+    public  int gcd() {
+	int ret = 1; int a = num; int b = den;
 	if (a==b) {
 	    ret = a;
 	}
@@ -97,9 +97,17 @@ public class Rational {
 	Rational m = new Rational(3,2);
 	n.multiply(m);
 	System.out.println(n);
-	System.out.println(gcd());
+	
+	System.out.println(n.gcd());
+	
 	n.reduce();
 	System.out.println(n);
+	m = new Rational(7,6);
+	n.add(m);
+	System.out.println(n);
+	n.reduce();
+	System.out.println(n);
+	
     }
 
 }//end of class Rational
