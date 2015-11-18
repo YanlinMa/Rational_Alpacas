@@ -36,7 +36,7 @@ public class Rational {
 
     //returns floating value of numerator (typecasted as double) divided by denominator
     public double floatValue(){
-	double num2 = num;
+ 	double num2 = num;
 	return num2/den;
     }
 
