@@ -4,7 +4,7 @@
 //2015-11-18
 
 public class Rational {
-    
+
     //Instance Variables
     private int num;
     private int den;
@@ -47,5 +47,5 @@ public class Rational {
     //main method
     public static void main(String[] args){
     }
-	
+
 }//end of class Rational

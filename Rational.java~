@@ -1,0 +1,23 @@
+/* Team JackSkellington -- Grace Stempel and Andrea Ma
+APCS1 pd10
+HW32 -- Irrationality Stops Here
+2015-11-18*/
+
+public class Rational{
+
+    //Instance Variables
+
+    //Default Constructor
+    //Overloaded Constructor
+
+    //Methods
+    //Overloaded toString()
+    //floatValue()
+    //multiply()
+    //divide()
+
+    //main method
+    public staic void main(String[] args){
+    }
+
+}//end of class Rational
