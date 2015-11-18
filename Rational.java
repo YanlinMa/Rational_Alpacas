@@ -52,6 +52,18 @@ public class Rational {
 	den = den/R.den;
     }
 
+    //adds two rational objects
+    public void add(Rational R){
+	num = num*R.den+den*R.num;
+	den = den*R.den;
+    }
+
+    //substracts two rational objects
+    public void subtract(Rational R){
+	num = num*R.den-den*R.num;
+	den = den*R.den;
+    }
+
     //main method -- Diagnostics
     public static void main(String[] args){
     }
