@@ -17,8 +17,8 @@ public class Rational{
 
     //Overloaded Constructor
     public Rational(int x, int y){
+	this();
 	if (y==0){
-	    this();
 	    System.out.println("Error: undefined");
 	}
 	else{
@@ -28,9 +28,23 @@ public class Rational{
     }
 
     //Methods
+
     //Overloaded toString()
+    public String toString(){
+	return + num +"/" + dem;
+    }
+
     //floatValue()
+    public double floatValue(){
+	return (num/dem);
+    }
+
     //multiply()
+    public void multiply(Rational R){
+	num = num * R.num;
+	den = den * R.den;
+    }
+
     //divide()
 
     //main method
