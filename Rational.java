@@ -84,10 +84,6 @@ public class Rational {
 	den = den*R.den;
     }
 
-<<<<<<< HEAD
-    //
-
-=======
     //reduces fraction, using gcd
     public void reduce() {
 	int g = gcd();
@@ -95,7 +91,6 @@ public class Rational {
 	den /= g;
     }
     
->>>>>>> 06164c69052446d6f59945b919d5e5a102b2fed5
     //main method -- Diagnostics
     public static void main(String[] args){
 	Rational n = new Rational(1,3);
