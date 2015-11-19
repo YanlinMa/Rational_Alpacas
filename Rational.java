@@ -52,14 +52,9 @@ public class Rational {
 	den = den/R.den;
     }
 
-
-
-
-
-
     //returns gcd of numerator and denominator, Euclidean Algo
-    public int gcd(Rational R) {
-	int ret = 1; int a = R.num; int b = R.den;
+    public  int gcd() {
+	int ret = 1; int a = num; int b = den;
 	if (a==b) {
 	    ret = a;
 	}
@@ -88,16 +83,36 @@ public class Rational {
 	num = num*R.den-den*R.num;
 	den = den*R.den;
     }
->>>>>>> 254a9bc0e8ee68129ae5d3bc1c3d20ad901b67fa
 
+<<<<<<< HEAD
     //
 
+=======
+    //reduces fraction, using gcd
+    public void reduce() {
+	int g = gcd();
+	num /= g;
+	den /= g;
+    }
+    
+>>>>>>> 06164c69052446d6f59945b919d5e5a102b2fed5
     //main method -- Diagnostics
     public static void main(String[] args){
 	Rational n = new Rational(1,3);
-	Rational m = new Rational(1,2);
+	Rational m = new Rational(3,2);
 	n.multiply(m);
 	System.out.println(n);
+	
+	System.out.println(n.gcd());
+	
+	n.reduce();
+	System.out.println(n);
+	m = new Rational(7,6);
+	n.add(m);
+	System.out.println(n);
+	n.reduce();
+	System.out.println(n);
+	
     }
 
 }//end of class Rational
