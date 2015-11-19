@@ -115,6 +115,14 @@ public class Rational {
 	}
 	return ret;
     }
+
+    public int compareTo(Rational R) {
+	Rational S = new Rational(num,den);
+	S.reduce();
+	R.reduce();
+	R.subtract(S);
+	return R.num;
+    }
     
     //main method -- Diagnostics
     public static void main(String[] args){
@@ -122,16 +130,11 @@ public class Rational {
 	Rational m = new Rational(3,2);
 	n.multiply(m);
 	System.out.println(n);
-      	System.out.println(n.gcd());	
 	n.reduce();
 	System.out.println(n);
-	m = new Rational(7,6);
-	n.add(m);
-	System.out.println(n);
-	n.reduce();
-	System.out.println(n);
-	System.out.println(gcd(18,24));
-	
+	System.out.println(n.compareTo(n));
+	System.out.println(n.compareTo(m));
+	System.out.println(m.compareTo(n));
     }
 
 }//end of class Rational
