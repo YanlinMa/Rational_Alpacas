@@ -1,7 +1,7 @@
-//Team NightmareBeforeChristmas- Andrea Ma, Sarah Yoon
+//Team Alpacas- Andrea Ma, Leo Auyeung
 //APCS1 pd10
-//HW33- Do You Even Add, Bro?
-//2015-11-18
+//HW37- Rational Equality
+//2015-11-24
 
 public class Rational {
 
@@ -124,6 +124,20 @@ public class Rational {
 	return R.num;
     }
     
+    //PHASE IV
+
+    public static void equals(Rational R){
+	if (num/den.equals(R)) {
+	    return true;
+	}
+	else if ((num/gcd(num,den))/(den/gcd(num,den)).equals(R.reduce())) {
+	    return true;
+	}
+	else {
+	    return false;
+	}
+    }
+
     //main method -- Diagnostics
     public static void main(String[] args){
 	Rational n = new Rational(1,3);
