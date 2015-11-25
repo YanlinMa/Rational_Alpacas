@@ -126,11 +126,17 @@ public class Rational {
     
     //PHASE IV
 
-    public static void equals(Rational R){
-	if (num/den.equals(R)) {
+    public boolean equals(Rational R){
+	if (num/den==R.num/R.den) {
 	    return true;
 	}
-	else if ((num/gcd(num,den))/(den/gcd(num,den)).equals(R.reduce())) {
+	R.reduce();
+	if ((num/gcd(num,den))/(den/gcd(num,den))==(R.num/R.den)) {
+	    System.out.println(num/gcd(num,den));
+	    return true;
+	}
+	Rational S = new Rational(num, den);
+	if (S.equals(R)) {
 	    return true;
 	}
 	else {
